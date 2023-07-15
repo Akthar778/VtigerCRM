@@ -7,6 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TroubleTicketPom {
 
+	public WebElement getSaveButton() {
+		return saveButton;
+	}
+
+	public WebElement getSeveritiesDropDown() {
+		return severitiesDropDown;
+	}
+
 	public WebElement getPrirorityDropDown() {
 		return prirorityDropDown;
 	}
@@ -45,4 +53,9 @@ public class TroubleTicketPom {
 	@FindBy(xpath = "//select[@name='ticketpriorities']")
 	private WebElement prirorityDropDown;
 
+	@FindBy(xpath = "//select[@name='ticketseverities']")
+	private WebElement severitiesDropDown;
+
+	@FindBy(xpath = "//input[contains(@class,'crmButton small save')]")
+	private WebElement saveButton;
 }

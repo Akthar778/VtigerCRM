@@ -21,7 +21,13 @@ public class troubleTicket extends BaseClass {
 		trobuleticketpom.getTitile().sendKeys("aktharr");
 
 		// select prirority dropdown
-		web.handlingDropDown(null, null);
+		web.handlingDropDown(trobuleticketpom.getPrirorityDropDown(), "High");
+
+		// select seviyarity
+		web.handlingDropDown(trobuleticketpom.getSeveritiesDropDown(), "Major");
+
+		// save
+		trobuleticketpom.getSaveButton().click();
 
 	}
 
