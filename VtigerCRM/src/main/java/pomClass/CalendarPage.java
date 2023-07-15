@@ -11,7 +11,7 @@ public class CalendarPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	// haaaAaaaaa
+	// haaaAaaaaaa
 
 	@FindBy(xpath = "//a[text()='Calendar']")
 	private WebElement calenderLink;
